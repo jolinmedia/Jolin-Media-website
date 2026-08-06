@@ -1,7 +1,7 @@
 # Jolin Media — Website Planning
 
 ## Status
-Planning phase. No code has been written yet — this doc is the single source of truth for decisions until we start building.
+Planning essentially complete. All content, pricing, assets, and tech stack decisions are made — only outstanding item is Joey creating a Stripe account before booking payments can go live (not a build blocker). No code has been written yet.
 
 ## Business
 - Name: **Jolin Media** (confirmed)
@@ -105,6 +105,12 @@ Single main page: **Home**, plus **Services** (pricing) and **Contact**. No stan
   - 30-minute session
   - 10 edited photos
 
+**Add-ons:**
+- 5 additional photos — $60
+- Additional location — $50
+- Full gallery upgrade — $150
+- Rush delivery (24–36 hrs) — $75
+
 ### Sports Photography
 - **Basic** — $75
   - 10 edited images, watermarked
@@ -129,9 +135,6 @@ Each pricing tier has a button linking to the Contact page.
   - Who owns the footage? — client does; full commercial license included; raws kept 12 months
   - Do you travel? — no fee within 30 miles of Burlington, mileage at cost beyond that
   - It's really just you? — yes, same person on camera/drone/edit/email; brings a second shooter on bigger jobs
-
-### Candidate addition — NOT yet confirmed, need a yes/no
-- **Portrait add-ons**: 5 additional photos $60, additional location $50, full gallery upgrade $150, rush delivery (24–36 hrs) $75
 
 ## Contact page
 - Same embedded booking/scheduler as Home
@@ -165,9 +168,6 @@ Each pricing tier has a button linking to the Contact page.
 **Booking / payments**
 1. Stripe account still needs to be created by Joey before booking payments can go live — not a blocker for building the site, just needs to happen before launch.
 
-**Candidate addition (see Services page)**
-2. Add portrait session add-ons (extra photos $60, extra location $50, gallery upgrade $150, rush delivery $75)?
-
 ## Decisions (confirmed)
 - Business name: Jolin Media
 - Contact info: email, phone, Instagram as listed above
@@ -176,6 +176,7 @@ Each pricing tier has a button linking to the Contact page.
 - Video examples: 3 YouTube links (confirmed above) + 2 silent/muted aerial loop clips (files to be uploaded)
 - Portfolio: 6 portraits + 6 sports, specific photos chosen (see Home page section)
 - Social Bundle ($1,200) added to videography pricing
+- Portrait add-ons added: extra photos $60, extra location $50, gallery upgrade $150, rush delivery $75
 - Deliverables and FAQ content added to Services page
 - Contact form: Cal.com only — the Jotform found in the earlier draft is disregarded
 - Logo: `jolin-media-logo-mark.png` only — other two logo files removed from the project
