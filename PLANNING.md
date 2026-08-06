@@ -154,6 +154,8 @@ Each pricing tier has a button linking to the Contact page.
 - Domain already owned: jolinmedia.com
 - Hosting: **Vercel**
 - Implied stack: a framework Vercel deploys natively (Next.js is the natural default) — to be confirmed when we scope the build
+- Media hosting/CDN: **ImageKit** — all site photos and video (portfolio, hero, about-me, aerial loops) served from ImageKit rather than committed as raw files in git or bundled into the Vercel deploy. Also solves the large-video-file problem (raw drone footage is 80–126MB, too big for git/GitHub).
+  - Constraint: ImageKit uploads via Claude's tooling only accept a public URL, not local files. Portfolio/hero/about-me photos are already on the public GitHub repo, so those can be imported via their raw GitHub URLs. The 2 aerial videos aren't in git (too large) — those need to go in via the ImageKit dashboard directly (manual upload), since there's no public URL to import from yet.
 
 ## Open questions (remaining)
 
