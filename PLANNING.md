@@ -49,9 +49,10 @@ Single main page: **Home**, plus **Services** (pricing) and **Contact**. No stan
    - Brief about-me paragraph
 
 5. **Booking section**
-   - Embedded scheduler (real-time availability), not a plain form
-   - Collects payment/deposit online
-   - Provider TBD (Calendly vs Cal.com — see open questions)
+   - Embedded **Cal.com** scheduler (real-time availability), not a plain form
+   - Photography bookings (portrait & sports sessions): collect **50% deposit upfront** via Stripe at time of booking
+   - Video bookings: **no payment collected at booking** — priced per finished minute, billed separately after the work is scoped/delivered
+   - Payment processor: **Stripe** — Joey still needs to create the account (not blocking site build, but needed before booking goes live)
 
 ## Services page — pricing
 
@@ -110,7 +111,7 @@ Each pricing tier has a button linking to the Contact page.
 - No reference sites — Claude has creative freedom on visual design
 - Logo: exists, will be uploaded before build
 - Hero photo + about-me photo: ready, will be uploaded before build
-- 12 portfolio photos (6 portraits + 6 sports): Joey has them, needs to send
+- Portfolio photos: **received and staged** in `assets/portfolio/portraits/` (12 files) and `assets/portfolio/sports/` (12 files) — copied from the Sandisk drive (`Jolin Media claude website/Photos/`). Plan calls for 6 per album but 12 were provided in each — need Joey to pick the 6 to feature per album (or use all 12 and adjust the plan — see open questions).
 
 ## Technical — DECIDED
 - Domain already owned: jolinmedia.com
@@ -119,16 +120,15 @@ Each pricing tier has a button linking to the Contact page.
 
 ## Open questions (remaining)
 
-**Portfolio / video**
-1. Should the 2 looping aerial clips be silent/muted autoplay loops (typical for that style), or do they need sound?
+**Portfolio**
+1. 12 photos were provided in each of `portraits` and `sports`, but the plan calls for 6 per album — pick which 6 per album to feature, or should the plan change to show all 12 each?
+2. Should the 2 looping aerial clips be silent/muted autoplay loops (typical for that style), or do they need sound?
 
-**Booking system**
-2. Scheduler provider — Calendly or Cal.com (or another)? Do you already have an account with either?
-3. Payment collection needs a processor — Stripe is the standard pairing with both Calendly and Cal.com. Do you have a Stripe account, or need to set one up?
-4. What should a booking actually charge — a flat deposit, the full session price, or does it vary by service (since pricing varies from $75 to $600/min)?
+**Assets still needed**
+3. Logo file, hero photo, about-me photo, and the 2 aerial video files — where do these live (same Sandisk folder? phone? elsewhere)?
 
-**Assets**
-5. Ready to receive when you are: logo file, hero photo, about-me photo, 12 portfolio photos, and the 2 aerial video files. What's the easiest way to get these to me — are they already on this Mac (which folder), on the external Sandisk drive, on your phone, or somewhere else? Once I know where they are I can bring them into the project folder.
+**Booking / payments**
+4. Stripe account still needs to be created by Joey before booking payments can go live — not a blocker for building the site, just needs to happen before launch.
 
 ## Decisions (confirmed)
 - Business name: Jolin Media
@@ -137,7 +137,7 @@ Each pricing tier has a button linking to the Contact page.
 - Portfolio layout: static grid, not lightbox, with embedded Playbook portfolio link below it
 - Video examples: 3 YouTube links (confirmed above) + 2 aerial loop clips (files to be uploaded)
 - Event Coverage & Web Design: quote-on-request, no listed pricing
-- Booking: embedded real-time scheduler with online payment collection
+- Booking: embedded Cal.com scheduler; 50% Stripe deposit upfront for photography, no payment at booking for video
 - Design: no reference site, Claude has creative freedom
 - Domain: owned (jolinmedia.com)
 - Hosting: Vercel
