@@ -140,6 +140,7 @@ Each pricing tier has a button linking to the Contact page.
 
 ## Design & content — DECIDED
 - No reference sites — Claude has creative freedom on visual design
+- Build process: use the `frontend-design` skill (distinctive, subject-specific visual identity — not a generic AI-design template) and the `ui-ux-pro-max` checklist (accessibility, touch targets, responsive breakpoints, motion, polish) when implementing the actual site
 - Logo: **resolved** — `assets/logo/jolin-media-logo-mark.png` is the clean usable wordmark (recovered from an earlier mockup build on the Sandisk drive, same design as what Joey shared in chat). Two other files in that folder are not usable: `jolin-media-logo.png` is a blank placeholder, and `jolin.media.logo.png` (saved directly by Joey) renders as a blurred/glowing variant — unclear if intentional, needs a check.
 - Hero photo + about-me photo: ready, will be uploaded before build
 - Portfolio photos: **received and staged** in `assets/portfolio/portraits/` (12 files) and `assets/portfolio/sports/` (12 files) — copied from the Sandisk drive (`Jolin Media claude website/Photos/`). Split decided: 5 portraits + 5 sports featured, remaining 14 go in a "More Work" album (see Home page section above).
