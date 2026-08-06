@@ -87,6 +87,10 @@ Single main page: **Home**, plus **Services** (pricing) and **Contact**. No stan
   - Licensed aerial pass on any project
   - 4K60 aerial footage
   - 10 aerial stills
+- **Social Bundle** — $1,200
+  - Six vertical edits from one shoot day
+  - One month of posting material
+  - Priority turnaround
 
 ### Portrait Photography
 - **Premium** — $500
@@ -127,8 +131,7 @@ Each pricing tier has a button linking to the Contact page.
   - Do you travel? — no fee within 30 miles of Burlington, mileage at cost beyond that
   - It's really just you? — yes, same person on camera/drone/edit/email; brings a second shooter on bigger jobs
 
-### Candidate additions — NOT yet confirmed, need a yes/no (these are new pricing, not just copy)
-- **Social bundle** — $1,200: six vertical edits from one shoot day, one month of posting material, priority turnaround (positioned as better value than buying 6 short-forms individually)
+### Candidate addition — NOT yet confirmed, need a yes/no
 - **Portrait add-ons**: 5 additional photos $60, additional location $50, full gallery upgrade $150, rush delivery (24–36 hrs) $75
 
 ## Contact page
@@ -141,7 +144,7 @@ Each pricing tier has a button linking to the Contact page.
 ## Design & content — DECIDED
 - No reference sites — Claude has creative freedom on visual design
 - Build process: use the `frontend-design` skill (distinctive, subject-specific visual identity — not a generic AI-design template) and the `ui-ux-pro-max` checklist (accessibility, touch targets, responsive breakpoints, motion, polish) when implementing the actual site
-- Logo: **resolved** — `assets/logo/jolin-media-logo-mark.png` is the clean usable wordmark (recovered from an earlier mockup build on the Sandisk drive, same design as what Joey shared in chat). Two other files in that folder are not usable: `jolin-media-logo.png` is a blank placeholder, and `jolin.media.logo.png` (saved directly by Joey) renders as a blurred/glowing variant — unclear if intentional, needs a check.
+- Logo: **final** — `assets/logo/jolin-media-logo-mark.png` (crisp wordmark). `jolin-media-logo.png` (blank) and `jolin.media.logo.png` (blurred variant) are disregarded — not used.
 - Hero photo + about-me photo: ready, will be uploaded before build
 - Portfolio photos: **received and staged** in `assets/portfolio/portraits/` (12 files) and `assets/portfolio/sports/` (12 files) — copied from the Sandisk drive (`Jolin Media claude website/Photos/`). Split decided: 5 portraits + 5 sports featured, remaining 14 go in a "More Work" album (see Home page section above).
 
@@ -156,17 +159,14 @@ Each pricing tier has a button linking to the Contact page.
 1. "More Work" album — confirm it should be one combined album of all 14 leftover photos, not split by category.
 
 **Assets still needed**
-2. `jolin.media.logo.png` (the file Joey saved) renders blurred/glowing rather than crisp — intentional stylized variant, or did it save wrong? (`jolin-media-logo-mark.png` is confirmed good and will be used either way.)
-3. Hero photo, about-me photo, and the 2 aerial video files — where do these live (same Sandisk folder? phone? elsewhere)?
+2. Hero photo, about-me photo, and the 2 aerial video files — where do these live (same Sandisk folder? phone? elsewhere)?
 
 **Booking / payments**
-4. Stripe account still needs to be created by Joey before booking payments can go live — not a blocker for building the site, just needs to happen before launch.
-5. An earlier draft had the contact form wired to a specific Jotform (`form.jotform.com/jsform/242324611651145`) — is that a real Jotform account Joey set up, or was it a placeholder? If real, does he want to keep using Jotform for contact instead of/alongside the Cal.com booking flow?
+3. Stripe account still needs to be created by Joey before booking payments can go live — not a blocker for building the site, just needs to happen before launch.
 
 **Candidate additions (see Services page)**
-6. Add the $1,200 "Social bundle" video package? (six vertical edits from one shoot day)
-7. Add portrait session add-ons (extra photos $60, extra location $50, gallery upgrade $150, rush delivery $75)?
-8. Add the Deliverables and FAQ content to the Services page?
+4. Add portrait session add-ons (extra photos $60, extra location $50, gallery upgrade $150, rush delivery $75)?
+5. Add the Deliverables and FAQ content to the Services page?
 
 ## Decisions (confirmed)
 - Business name: Jolin Media
@@ -175,6 +175,9 @@ Each pricing tier has a button linking to the Contact page.
 - Portfolio layout: static grid, not lightbox, with embedded Playbook portfolio link below it
 - Video examples: 3 YouTube links (confirmed above) + 2 silent/muted aerial loop clips (files to be uploaded)
 - Portfolio split: 5 portraits + 5 sports featured, remaining 14 in a "More Work" album
+- Social Bundle ($1,200) added to videography pricing
+- Contact form: Cal.com only — the Jotform found in the earlier draft is disregarded
+- Logo: `jolin-media-logo-mark.png` only — other two logo files removed from the project
 - Event Coverage & Web Design: quote-on-request, no listed pricing
 - Booking: embedded Cal.com scheduler; 50% Stripe deposit upfront for photography, no payment at booking for video
 - Design: no reference site, Claude has creative freedom
