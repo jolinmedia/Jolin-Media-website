@@ -37,17 +37,16 @@ Single main page: **Home**, plus **Services** (pricing) and **Contact**. No stan
    - One tile/tab for **Bookings** with a "Check Dates" button
 
 3. **Portfolio preview**
-   - Three albums, static grid (not lightbox):
-     - Portraits — 5 photos
-     - Sports — 5 photos
-     - More Work — remaining 14 photos (7 portraits + 7 sports not featured above) — *assumption: one combined album; tell me if you wanted portraits/sports kept separate within it*
-   - Which 5 go in each of Portraits/Sports is not yet chosen — Claude will make an initial pick from the 12 staged in `assets/portfolio/`, swappable anytime
+   - Two albums, static grid (not lightbox), 6 photos each — back to the original plan:
+     - **Portraits** (`assets/portfolio/portraits/`): JOE03635 (path, overalls), JOE04209 (creek, fall foliage), JOE07612 (flower field, dress), JOE07642 (flower field, male), JOE04956 (locker room w/ basketball), JOE03265 (gym w/ trophy) — picked for a mix of outdoor/indoor settings and subjects
+     - **Sports** (`assets/portfolio/sports/`): JOE01763 (explosive dunk), DSC03306 (finger-roll layup, warm light), DSC03011 (stylized dribble shot), JOE04201 (B&W floor moment), JOE09920 2 (artistic shoe/reflection detail), JOE02500 (jump shot w/ referee) — picked for variety across action, mood, and editing style
+   - The other 12 candidate photos (6 portraits + 6 sports) were removed from the project — not used
    - Plus a video section:
      - 3 video examples (YouTube):
        - https://youtu.be/XGcTLxPtHUs
        - https://youtu.be/06cEg1J4TNo
        - https://youtu.be/ejIs2mUXO4M
-     - 2 looping aerial shots (drone footage, silent/muted autoplay loop) — Joey will upload the video files
+     - 2 looping aerial shots (drone footage, silent/muted autoplay loop) — **live in ImageKit** at `/site/drone/DJI_0137.mp4` and `/site/drone/DJI_0160.mp4`
    - Below the static image grid: embedded Playbook portfolio (https://www.playbook.com/s/jolinmedia/portfolio/)
 
 4. **About Me**
@@ -118,7 +117,7 @@ Each pricing tier has a button linking to the Contact page.
 
 **Not priced yet (quote-on-request for now):** Event Coverage, Web Design. Contact-only, no listed pricing tiers.
 
-### Carried over from earlier draft — content only, doesn't contradict anything confirmed
+### Added to Services page — DECIDED (Deliverables + FAQ, carried over from earlier draft)
 - **Deliverables** (what's included, could be its own tab/section on Services):
   - Film & stills: master film (16:9, graded/mixed), vertical cutdowns for Reels/TikTok, retouched stills (print + web sizes), raw footage kept 12 months
   - Events & web: same-week recap film for events, sponsor cutdowns/social sets, websites built around the footage, one training call to update it yourself
@@ -147,30 +146,28 @@ Each pricing tier has a button linking to the Contact page.
 - Logo: **final** — `assets/logo/jolin-media-logo-mark.png` (crisp wordmark). `jolin-media-logo.png` (blank) and `jolin.media.logo.png` (blurred variant) are disregarded — not used.
 - Hero photo: **received** — `assets/hero shot/0F3C6767-4813-430F-AC80-AD58703CB388.JPG` (Joey courtside at a championship event, camera visible, thumbs up)
 - About-me photo: **received** — `assets/about me/JOE03278 2.JPG` (outdoor portrait near a barn)
-- Aerial loop videos: **received**, kept locally only (gitignored, too large for the repo — `assets/drone aerial shots/DJI_0137.mp4` and `DJI_0160.mp4`, 126MB and 80MB). Will need web-optimized/compressed versions made before use in the actual site build.
-- Portfolio photos: **received and staged** in `assets/portfolio/portraits/` (12 files) and `assets/portfolio/sports/` (12 files) — copied from the Sandisk drive (`Jolin Media claude website/Photos/`). Split decided: 5 portraits + 5 sports featured, remaining 14 go in a "More Work" album (see Home page section above).
+- Aerial loop videos: **received and live in ImageKit** at `/site/drone/DJI_0137.mp4` (~77MB) and `/site/drone/DJI_0160.mp4` (~80MB). Still need web-optimized/compressed versions made before use as autoplay loops — these are raw originals.
+- Portfolio photos: **final selections made** — 6 portraits + 6 sports staged in `assets/portfolio/` (see Home page section above for which files and why). The other 12 candidates were removed from the project.
 
 ## Technical — DECIDED
 - Domain already owned: jolinmedia.com
 - Hosting: **Vercel**
 - Implied stack: a framework Vercel deploys natively (Next.js is the natural default) — to be confirmed when we scope the build
 - Media hosting/CDN: **ImageKit** — all site photos and video (portfolio, hero, about-me, aerial loops) served from ImageKit rather than committed as raw files in git or bundled into the Vercel deploy. Also solves the large-video-file problem (raw drone footage is 80–126MB, too big for git/GitHub).
-  - Constraint: ImageKit uploads via Claude's tooling only accept a public URL, not local files. Portfolio/hero/about-me photos are already on the public GitHub repo, so those can be imported via their raw GitHub URLs. The 2 aerial videos aren't in git (too large) — those need to go in via the ImageKit dashboard directly (manual upload), since there's no public URL to import from yet.
+  - Constraint: ImageKit uploads via Claude's tooling only accept a public URL, not local files. Portfolio/hero/about-me photos are already on the public GitHub repo, so those can be imported via their raw GitHub URLs. The 2 aerial videos aren't in git (too large) — Joey uploaded those directly via the ImageKit dashboard instead.
+  - Existing ImageKit folder structure found: `/portfolio/portrait`, `/portfolio/sports`, `/portfolio/video`, `/portfolio/drone` (all empty so far), `/site/drone` (has the 2 aerial videos), `/site` (otherwise empty).
+- Backend/database: **Supabase** — added to the stack, scope not yet defined (see open questions).
 
 ## Open questions (remaining)
 
-**Portfolio**
-1. "More Work" album — confirm it should be one combined album of all 14 leftover photos, not split by category.
-
 **Booking / payments**
-2. Stripe account still needs to be created by Joey before booking payments can go live — not a blocker for building the site, just needs to happen before launch.
+1. Stripe account still needs to be created by Joey before booking payments can go live — not a blocker for building the site, just needs to happen before launch.
 
-**Candidate additions (see Services page)**
-3. Add portrait session add-ons (extra photos $60, extra location $50, gallery upgrade $150, rush delivery $75)?
-4. Add the Deliverables and FAQ content to the Services page?
+**Candidate addition (see Services page)**
+2. Add portrait session add-ons (extra photos $60, extra location $50, gallery upgrade $150, rush delivery $75)?
 
-**Housekeeping**
-5. A `drone/` folder with Adobe Premiere project files (`.prproj`, auto-saves) appeared at the top level of the project folder — doesn't belong in a website repo, already excluded from git via `.gitignore`. Delete it from the project folder entirely, or leave it alone?
+**Technical**
+3. Supabase was added to the stack but its purpose isn't defined yet — what's it for? Likely candidates: storing contact/booking inquiries, an admin dashboard for leads, auth for a client portal, or something else. Need to know before scoping the data model.
 
 ## Decisions (confirmed)
 - Business name: Jolin Media
@@ -178,10 +175,14 @@ Each pricing tier has a button linking to the Contact page.
 - Site structure: Home (single page with sections) + Services + Contact
 - Portfolio layout: static grid, not lightbox, with embedded Playbook portfolio link below it
 - Video examples: 3 YouTube links (confirmed above) + 2 silent/muted aerial loop clips (files to be uploaded)
-- Portfolio split: 5 portraits + 5 sports featured, remaining 14 in a "More Work" album
+- Portfolio: 6 portraits + 6 sports, specific photos chosen (see Home page section)
 - Social Bundle ($1,200) added to videography pricing
+- Deliverables and FAQ content added to Services page
 - Contact form: Cal.com only — the Jotform found in the earlier draft is disregarded
 - Logo: `jolin-media-logo-mark.png` only — other two logo files removed from the project
+- Media hosting: ImageKit — aerial videos already live there; portfolio/hero/about-me photos to be imported from GitHub
+- Stray `drone/` Premiere project folder deleted from the project (Joey is uploading originals to ImageKit himself)
+- Backend: Supabase added to the stack (scope TBD — see open questions)
 - Event Coverage & Web Design: quote-on-request, no listed pricing
 - Booking: embedded Cal.com scheduler; 50% Stripe deposit upfront for photography, no payment at booking for video
 - Design: no reference site, Claude has creative freedom
