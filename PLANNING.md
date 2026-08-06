@@ -145,7 +145,9 @@ Each pricing tier has a button linking to the Contact page.
 - No reference sites — Claude has creative freedom on visual design
 - Build process: use the `frontend-design` skill (distinctive, subject-specific visual identity — not a generic AI-design template) and the `ui-ux-pro-max` checklist (accessibility, touch targets, responsive breakpoints, motion, polish) when implementing the actual site
 - Logo: **final** — `assets/logo/jolin-media-logo-mark.png` (crisp wordmark). `jolin-media-logo.png` (blank) and `jolin.media.logo.png` (blurred variant) are disregarded — not used.
-- Hero photo + about-me photo: ready, will be uploaded before build
+- Hero photo: **received** — `assets/hero shot/0F3C6767-4813-430F-AC80-AD58703CB388.JPG` (Joey courtside at a championship event, camera visible, thumbs up)
+- About-me photo: **received** — `assets/about me/JOE03278 2.JPG` (outdoor portrait near a barn)
+- Aerial loop videos: **received**, kept locally only (gitignored, too large for the repo — `assets/drone aerial shots/DJI_0137.mp4` and `DJI_0160.mp4`, 126MB and 80MB). Will need web-optimized/compressed versions made before use in the actual site build.
 - Portfolio photos: **received and staged** in `assets/portfolio/portraits/` (12 files) and `assets/portfolio/sports/` (12 files) — copied from the Sandisk drive (`Jolin Media claude website/Photos/`). Split decided: 5 portraits + 5 sports featured, remaining 14 go in a "More Work" album (see Home page section above).
 
 ## Technical — DECIDED
@@ -158,15 +160,15 @@ Each pricing tier has a button linking to the Contact page.
 **Portfolio**
 1. "More Work" album — confirm it should be one combined album of all 14 leftover photos, not split by category.
 
-**Assets still needed**
-2. Hero photo, about-me photo, and the 2 aerial video files — where do these live (same Sandisk folder? phone? elsewhere)?
-
 **Booking / payments**
-3. Stripe account still needs to be created by Joey before booking payments can go live — not a blocker for building the site, just needs to happen before launch.
+2. Stripe account still needs to be created by Joey before booking payments can go live — not a blocker for building the site, just needs to happen before launch.
 
 **Candidate additions (see Services page)**
-4. Add portrait session add-ons (extra photos $60, extra location $50, gallery upgrade $150, rush delivery $75)?
-5. Add the Deliverables and FAQ content to the Services page?
+3. Add portrait session add-ons (extra photos $60, extra location $50, gallery upgrade $150, rush delivery $75)?
+4. Add the Deliverables and FAQ content to the Services page?
+
+**Housekeeping**
+5. A `drone/` folder with Adobe Premiere project files (`.prproj`, auto-saves) appeared at the top level of the project folder — doesn't belong in a website repo, already excluded from git via `.gitignore`. Delete it from the project folder entirely, or leave it alone?
 
 ## Decisions (confirmed)
 - Business name: Jolin Media
