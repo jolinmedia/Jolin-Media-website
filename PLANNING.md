@@ -11,6 +11,11 @@ Planning phase. No code has been written yet — this doc is the single source o
 - Phone: (319) 750-3747
 - Instagram: @jolin_media
 - Domain: jolinmedia.com (already owned)
+- Age: 21
+- Certifications: Part 107 certified (licensed to fly commercially) and fully insured; certificates available on request before shoot day
+- Service area: Southeast Iowa, western Illinois, north Missouri — no travel fee within 30 miles of Burlington, mileage at cost beyond that
+- Gear: full-frame mirrorless bodies (x2), fast primes + a workhorse zoom, licensed 4K/60 drone, lav + shotgun audio, lights when needed
+- Footage/photo ownership: client owns the final deliverables; every video package includes a full commercial license; raw footage retained for 12 months
 
 ## Site structure — DECIDED
 Single main page: **Home**, plus **Services** (pricing) and **Contact**. No standalone Portfolio/About pages — those live as sections on Home.
@@ -48,7 +53,14 @@ Single main page: **Home**, plus **Services** (pricing) and **Contact**. No stan
 4. **About Me**
    - Name
    - Photo
-   - Brief about-me paragraph
+   - About-me copy (from earlier draft, carried over — adjust tone/length as needed):
+     > I run Jolin Media. It's a camera, a drone, an edit bay and me. I'm 21 and I've been shooting since I was old enough to save for a lens. Working solo means you talk to the person holding the camera, the price doesn't cover an office, and nothing gets lost between a producer and an editor. Most of my work happens within an hour of Burlington — food producers, hotels, property, ball games, festivals. If it looks good in the last hour of light, I want to shoot it.
+   - "How it goes" 4-step process:
+     1. You send the brief — what, where, when
+     2. I send a plan — shot list, price, and a date, usually same day
+     3. Shoot day — I show up early, work around your crew, stay out of the way
+     4. You get the files — edits come back quickly, revisions included
+   - Certification/gear callouts (Part 107 certified, fully insured, Burlington/SE Iowa service area, gear list — see Business section above)
 
 5. **Booking section**
    - Embedded **Cal.com** scheduler (real-time availability), not a plain form
@@ -102,6 +114,23 @@ Each pricing tier has a button linking to the Contact page.
 
 **Not priced yet (quote-on-request for now):** Event Coverage, Web Design. Contact-only, no listed pricing tiers.
 
+### Carried over from earlier draft — content only, doesn't contradict anything confirmed
+- **Deliverables** (what's included, could be its own tab/section on Services):
+  - Film & stills: master film (16:9, graded/mixed), vertical cutdowns for Reels/TikTok, retouched stills (print + web sizes), raw footage kept 12 months
+  - Events & web: same-week recap film for events, sponsor cutdowns/social sets, websites built around the footage, one training call to update it yourself
+- **FAQ** (candidate content for Services page):
+  - What's a finished minute? — the length of the film you actually get (e.g. a 90-second brand film = 1.5 finished minutes = $900 at the commercial rate, regardless of shoot days)
+  - Why is short form cheaper per minute? — less scripting, fewer setups, no long-form edit
+  - Are you licensed to fly? — yes, Part 107 certified and insured, airspace authorizations filed when needed
+  - How fast do I see something? — realistic timeline given with the plan; stills usually land before the film
+  - Who owns the footage? — client does; full commercial license included; raws kept 12 months
+  - Do you travel? — no fee within 30 miles of Burlington, mileage at cost beyond that
+  - It's really just you? — yes, same person on camera/drone/edit/email; brings a second shooter on bigger jobs
+
+### Candidate additions — NOT yet confirmed, need a yes/no (these are new pricing, not just copy)
+- **Social bundle** — $1,200: six vertical edits from one shoot day, one month of posting material, priority turnaround (positioned as better value than buying 6 short-forms individually)
+- **Portrait add-ons**: 5 additional photos $60, additional location $50, full gallery upgrade $150, rush delivery (24–36 hrs) $75
+
 ## Contact page
 - Same embedded booking/scheduler as Home
 - Email: joey@jolinmedia.com
@@ -111,7 +140,7 @@ Each pricing tier has a button linking to the Contact page.
 
 ## Design & content — DECIDED
 - No reference sites — Claude has creative freedom on visual design
-- Logo: Joey shared it in chat, but it can't be pulled from the conversation to disk directly — waiting on him to save it to `assets/logo/` via Finder
+- Logo: **resolved** — `assets/logo/jolin-media-logo-mark.png` is the clean usable wordmark (recovered from an earlier mockup build on the Sandisk drive, same design as what Joey shared in chat). Two other files in that folder are not usable: `jolin-media-logo.png` is a blank placeholder, and `jolin.media.logo.png` (saved directly by Joey) renders as a blurred/glowing variant — unclear if intentional, needs a check.
 - Hero photo + about-me photo: ready, will be uploaded before build
 - Portfolio photos: **received and staged** in `assets/portfolio/portraits/` (12 files) and `assets/portfolio/sports/` (12 files) — copied from the Sandisk drive (`Jolin Media claude website/Photos/`). Split decided: 5 portraits + 5 sports featured, remaining 14 go in a "More Work" album (see Home page section above).
 
@@ -126,11 +155,17 @@ Each pricing tier has a button linking to the Contact page.
 1. "More Work" album — confirm it should be one combined album of all 14 leftover photos, not split by category.
 
 **Assets still needed**
-2. Logo — needs to be saved to `assets/logo/` on this Mac (can't be pulled from chat directly).
+2. `jolin.media.logo.png` (the file Joey saved) renders blurred/glowing rather than crisp — intentional stylized variant, or did it save wrong? (`jolin-media-logo-mark.png` is confirmed good and will be used either way.)
 3. Hero photo, about-me photo, and the 2 aerial video files — where do these live (same Sandisk folder? phone? elsewhere)?
 
 **Booking / payments**
 4. Stripe account still needs to be created by Joey before booking payments can go live — not a blocker for building the site, just needs to happen before launch.
+5. An earlier draft had the contact form wired to a specific Jotform (`form.jotform.com/jsform/242324611651145`) — is that a real Jotform account Joey set up, or was it a placeholder? If real, does he want to keep using Jotform for contact instead of/alongside the Cal.com booking flow?
+
+**Candidate additions (see Services page)**
+6. Add the $1,200 "Social bundle" video package? (six vertical edits from one shoot day)
+7. Add portrait session add-ons (extra photos $60, extra location $50, gallery upgrade $150, rush delivery $75)?
+8. Add the Deliverables and FAQ content to the Services page?
 
 ## Decisions (confirmed)
 - Business name: Jolin Media
@@ -144,3 +179,4 @@ Each pricing tier has a button linking to the Contact page.
 - Design: no reference site, Claude has creative freedom
 - Domain: owned (jolinmedia.com)
 - Hosting: Vercel
+- About Me copy, 4-step process, certifications/gear, and FAQ/Deliverables content: carried over from an earlier draft build found on the Sandisk drive (`Claude code websites/jolin media/`) — kept because it didn't contradict anything confirmed this session
