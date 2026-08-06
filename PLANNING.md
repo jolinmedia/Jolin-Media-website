@@ -151,12 +151,14 @@ Each pricing tier has a button linking to the Contact page.
 
 ## Technical — DECIDED
 - Domain already owned: jolinmedia.com
+- Frontend framework: **Next.js**
 - Hosting: **Vercel**
-- Implied stack: a framework Vercel deploys natively (Next.js is the natural default) — to be confirmed when we scope the build
-- Media hosting/CDN: **ImageKit** — all site photos and video (portfolio, hero, about-me, aerial loops) served from ImageKit rather than committed as raw files in git or bundled into the Vercel deploy. Also solves the large-video-file problem (raw drone footage is 80–126MB, too big for git/GitHub).
+- Media hosting/CDN: **ImageKit** — chosen for fast image/video loading. All site photos and video (portfolio, hero, about-me, aerial loops) served from ImageKit rather than committed as raw files in git or bundled into the Vercel deploy. Also solves the large-video-file problem (raw drone footage is 80–126MB, too big for git/GitHub).
   - Constraint: ImageKit uploads via Claude's tooling only accept a public URL, not local files. Portfolio/hero/about-me photos are already on the public GitHub repo, so those can be imported via their raw GitHub URLs. The 2 aerial videos aren't in git (too large) — Joey uploaded those directly via the ImageKit dashboard instead.
   - Existing ImageKit folder structure found: `/portfolio/portrait`, `/portfolio/sports`, `/portfolio/video`, `/portfolio/drone` (all empty so far), `/site/drone` (has the 2 aerial videos), `/site` (otherwise empty).
-- Backend/database: **Supabase** — added to the stack, scope not yet defined (see open questions).
+- Backend: **Supabase** — for backend features generally (database, likely auth/storage as needed). Specific tables/schema (contact/booking inquiries, etc.) to be defined once we scope the actual build.
+
+**Confirmed stack: Next.js (frontend) + Vercel (hosting) + Supabase (backend) + ImageKit (media) + Cal.com (booking) + Stripe (payments).**
 
 ## Open questions (remaining)
 
@@ -165,9 +167,6 @@ Each pricing tier has a button linking to the Contact page.
 
 **Candidate addition (see Services page)**
 2. Add portrait session add-ons (extra photos $60, extra location $50, gallery upgrade $150, rush delivery $75)?
-
-**Technical**
-3. Supabase was added to the stack but its purpose isn't defined yet — what's it for? Likely candidates: storing contact/booking inquiries, an admin dashboard for leads, auth for a client portal, or something else. Need to know before scoping the data model.
 
 ## Decisions (confirmed)
 - Business name: Jolin Media
@@ -182,7 +181,7 @@ Each pricing tier has a button linking to the Contact page.
 - Logo: `jolin-media-logo-mark.png` only — other two logo files removed from the project
 - Media hosting: ImageKit — aerial videos already live there; portfolio/hero/about-me photos to be imported from GitHub
 - Stray `drone/` Premiere project folder deleted from the project (Joey is uploading originals to ImageKit himself)
-- Backend: Supabase added to the stack (scope TBD — see open questions)
+- Stack confirmed: Next.js + Vercel + Supabase (backend) + ImageKit (media) + Cal.com + Stripe
 - Event Coverage & Web Design: quote-on-request, no listed pricing
 - Booking: embedded Cal.com scheduler; 50% Stripe deposit upfront for photography, no payment at booking for video
 - Design: no reference site, Claude has creative freedom
