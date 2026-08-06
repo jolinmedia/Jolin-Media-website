@@ -36,9 +36,12 @@ Single main page: **Home**, plus **Services** (pricing) and **Contact**. No stan
      - Portraits — 6 photos
      - Sports — 6 photos
    - Plus a video section:
-     - 3 video examples (YouTube links)
-     - 2 looping aerial shots (drone footage, autoplay/loop)
-   - Reference: Joey has an existing portfolio at https://www.playbook.com/s/jolinmedia/portfolio/ — need to confirm whether this is just a source to pull images/videos from, or should be linked/embedded on the site (see open questions)
+     - 3 video examples (YouTube):
+       - https://youtu.be/XGcTLxPtHUs
+       - https://youtu.be/06cEg1J4TNo
+       - https://youtu.be/ejIs2mUXO4M
+     - 2 looping aerial shots (drone footage, autoplay/loop) — Joey will upload the video files
+   - Below the static image grid: embedded Playbook portfolio (https://www.playbook.com/s/jolinmedia/portfolio/)
 
 4. **About Me**
    - Name
@@ -117,23 +120,22 @@ Each pricing tier has a button linking to the Contact page.
 ## Open questions (remaining)
 
 **Portfolio / video**
-1. The Playbook link (https://www.playbook.com/s/jolinmedia/portfolio/) — should the site just pull photos/videos from there as source material (images end up hosted on our own site), or should it also be linked/embedded somewhere as "view full portfolio"?
-2. What are the 3 YouTube links for the video examples?
-3. Where do the 2 looping aerial video clips come from (file format/source), and do they need sound or should they be silent/muted loops (typical for autoplay background-style clips)?
+1. Should the 2 looping aerial clips be silent/muted autoplay loops (typical for that style), or do they need sound?
 
 **Booking system**
-4. Scheduler provider — Calendly or Cal.com (or another)? Do you already have an account with either?
-5. Payment collection needs a processor — Stripe is the standard pairing with both Calendly and Cal.com. Do you have a Stripe account, or need to set one up?
-6. What should a booking actually charge — a flat deposit, the full session price, or does it vary by service (since pricing varies from $75 to $600/min)?
+2. Scheduler provider — Calendly or Cal.com (or another)? Do you already have an account with either?
+3. Payment collection needs a processor — Stripe is the standard pairing with both Calendly and Cal.com. Do you have a Stripe account, or need to set one up?
+4. What should a booking actually charge — a flat deposit, the full session price, or does it vary by service (since pricing varies from $75 to $600/min)?
 
 **Assets**
-7. Ready to receive when you are: logo file, hero photo, about-me photo, and the 12 portfolio photos. What's the easiest way for you to get these to Joey's computer — are they already on this Mac (which folder), on the external Sandisk drive, on your phone, or somewhere else? Once I know where they are I can bring them into the project folder.
+5. Ready to receive when you are: logo file, hero photo, about-me photo, 12 portfolio photos, and the 2 aerial video files. What's the easiest way to get these to me — are they already on this Mac (which folder), on the external Sandisk drive, on your phone, or somewhere else? Once I know where they are I can bring them into the project folder.
 
 ## Decisions (confirmed)
 - Business name: Jolin Media
 - Contact info: email, phone, Instagram as listed above
 - Site structure: Home (single page with sections) + Services + Contact
-- Portfolio layout: static grid, not lightbox
+- Portfolio layout: static grid, not lightbox, with embedded Playbook portfolio link below it
+- Video examples: 3 YouTube links (confirmed above) + 2 aerial loop clips (files to be uploaded)
 - Event Coverage & Web Design: quote-on-request, no listed pricing
 - Booking: embedded real-time scheduler with online payment collection
 - Design: no reference site, Claude has creative freedom
