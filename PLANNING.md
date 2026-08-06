@@ -32,15 +32,17 @@ Single main page: **Home**, plus **Services** (pricing) and **Contact**. No stan
    - One tile/tab for **Bookings** with a "Check Dates" button
 
 3. **Portfolio preview**
-   - Two albums, static grid (not lightbox):
-     - Portraits — 6 photos
-     - Sports — 6 photos
+   - Three albums, static grid (not lightbox):
+     - Portraits — 5 photos
+     - Sports — 5 photos
+     - More Work — remaining 14 photos (7 portraits + 7 sports not featured above) — *assumption: one combined album; tell me if you wanted portraits/sports kept separate within it*
+   - Which 5 go in each of Portraits/Sports is not yet chosen — Claude will make an initial pick from the 12 staged in `assets/portfolio/`, swappable anytime
    - Plus a video section:
      - 3 video examples (YouTube):
        - https://youtu.be/XGcTLxPtHUs
        - https://youtu.be/06cEg1J4TNo
        - https://youtu.be/ejIs2mUXO4M
-     - 2 looping aerial shots (drone footage, autoplay/loop) — Joey will upload the video files
+     - 2 looping aerial shots (drone footage, silent/muted autoplay loop) — Joey will upload the video files
    - Below the static image grid: embedded Playbook portfolio (https://www.playbook.com/s/jolinmedia/portfolio/)
 
 4. **About Me**
@@ -109,9 +111,9 @@ Each pricing tier has a button linking to the Contact page.
 
 ## Design & content — DECIDED
 - No reference sites — Claude has creative freedom on visual design
-- Logo: exists, will be uploaded before build
+- Logo: Joey shared it in chat, but it can't be pulled from the conversation to disk directly — waiting on him to save it to `assets/logo/` via Finder
 - Hero photo + about-me photo: ready, will be uploaded before build
-- Portfolio photos: **received and staged** in `assets/portfolio/portraits/` (12 files) and `assets/portfolio/sports/` (12 files) — copied from the Sandisk drive (`Jolin Media claude website/Photos/`). Plan calls for 6 per album but 12 were provided in each — need Joey to pick the 6 to feature per album (or use all 12 and adjust the plan — see open questions).
+- Portfolio photos: **received and staged** in `assets/portfolio/portraits/` (12 files) and `assets/portfolio/sports/` (12 files) — copied from the Sandisk drive (`Jolin Media claude website/Photos/`). Split decided: 5 portraits + 5 sports featured, remaining 14 go in a "More Work" album (see Home page section above).
 
 ## Technical — DECIDED
 - Domain already owned: jolinmedia.com
@@ -121,11 +123,11 @@ Each pricing tier has a button linking to the Contact page.
 ## Open questions (remaining)
 
 **Portfolio**
-1. 12 photos were provided in each of `portraits` and `sports`, but the plan calls for 6 per album — pick which 6 per album to feature, or should the plan change to show all 12 each?
-2. Should the 2 looping aerial clips be silent/muted autoplay loops (typical for that style), or do they need sound?
+1. "More Work" album — confirm it should be one combined album of all 14 leftover photos, not split by category.
 
 **Assets still needed**
-3. Logo file, hero photo, about-me photo, and the 2 aerial video files — where do these live (same Sandisk folder? phone? elsewhere)?
+2. Logo — needs to be saved to `assets/logo/` on this Mac (can't be pulled from chat directly).
+3. Hero photo, about-me photo, and the 2 aerial video files — where do these live (same Sandisk folder? phone? elsewhere)?
 
 **Booking / payments**
 4. Stripe account still needs to be created by Joey before booking payments can go live — not a blocker for building the site, just needs to happen before launch.
@@ -135,7 +137,8 @@ Each pricing tier has a button linking to the Contact page.
 - Contact info: email, phone, Instagram as listed above
 - Site structure: Home (single page with sections) + Services + Contact
 - Portfolio layout: static grid, not lightbox, with embedded Playbook portfolio link below it
-- Video examples: 3 YouTube links (confirmed above) + 2 aerial loop clips (files to be uploaded)
+- Video examples: 3 YouTube links (confirmed above) + 2 silent/muted aerial loop clips (files to be uploaded)
+- Portfolio split: 5 portraits + 5 sports featured, remaining 14 in a "More Work" album
 - Event Coverage & Web Design: quote-on-request, no listed pricing
 - Booking: embedded Cal.com scheduler; 50% Stripe deposit upfront for photography, no payment at booking for video
 - Design: no reference site, Claude has creative freedom
