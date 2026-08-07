@@ -18,7 +18,9 @@ Planning essentially complete. All content, pricing, assets, and tech stack deci
 - Footage/photo ownership: client owns the final deliverables; every video package includes a full commercial license; raw footage retained for 12 months
 
 ## Site structure — DECIDED
-Single main page: **Home**, plus **Services** (pricing) and **Contact**. No standalone Portfolio/About pages — those live as sections on Home.
+Main page: **Home**, plus **Services** (pricing), **Book**, and **Contact**. No standalone Portfolio/About pages — those live as sections on Home.
+
+**Book is its own page** (revised from the original plan below): the live Cal.com scheduler lives only on `/book`. Home's booking section and the Services pricing CTAs ("Get started" / "Book this session") are teasers/buttons pointing to `/book`, not separate embeds — avoids loading the calendar widget more than once. `/contact` dropped its embed too; it's now just direct contact info (email/phone/Instagram/location) plus a CTA card to `/book`. Event Coverage and Web Design "Get a quote" buttons still point to `/contact`, since a quote request isn't a calendar booking.
 
 ## Home page — section by section
 
@@ -52,8 +54,8 @@ Single main page: **Home**, plus **Services** (pricing) and **Contact**. No stan
 4. **About Me**
    - Name
    - Photo
-   - About-me copy (from earlier draft, carried over — adjust tone/length as needed):
-     > I run Jolin Media. It's a camera, a drone, an edit bay and me. I'm 21 and I've been shooting since I was old enough to save for a lens. Working solo means you talk to the person holding the camera, the price doesn't cover an office, and nothing gets lost between a producer and an editor. Most of my work happens within an hour of Burlington — food producers, hotels, property, ball games, festivals. If it looks good in the last hour of light, I want to shoot it.
+   - About-me copy (revised):
+     > I run Jolin Media. It's a camera, a drone, an editing suite, and me. I'm 21, and I've been behind a camera since I was old enough to save up for my first lens. Working solo means you work directly with the person shooting, editing, and delivering your project. Your budget goes into the work itself—not overhead—and nothing gets lost between a producer and an editor. Most of what I create is within an hour of Burlington: food producers, hotels, real estate, sports, and community events. If it looks its best during the last hour of daylight, chances are I want to film it.
    - "How it goes" 4-step process:
      1. You send the brief — what, where, when
      2. I send a plan — shot list, price, and a date, usually same day
